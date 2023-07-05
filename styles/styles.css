@@ -1,0 +1,133 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color:navy;
+}
+  
+.container 
+{
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+  
+h1 
+{
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+  
+.todo-container 
+{
+    margin-top: 20px;
+}
+  
+.todo-item 
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.todo-item input[type="text"] 
+{
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+  
+.todo-item button 
+{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.todo-item button:hover 
+{
+    background-color: #45a049;
+}
+  
+.todo-item button:active 
+{
+    background-color: #3e8e41;
+}
+  
+.task-list-item 
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+  
+.task-list-item span 
+{
+    flex-grow: 1;
+}
+  
+.task-list-item button 
+{
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+  
+.task-list-item button:hover 
+{
+    color: #333;
+}
+  
+.task-list-item input[type="checkbox"] 
+{
+    margin-right: 10px;
+    appearance: none;
+}
+  
+.task-list-item input[type="checkbox"]::before 
+{
+    content: "\2713";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 16px;
+    transition: background-color 0.3s;
+}
+  
+.task-list-item input[type="checkbox"]:checked::before 
+{
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: #fff;
+}
+  
+@media (max-width: 480px) 
+{
+    .container 
+    {
+      padding: 10px;
+    }
+  
+    .task-list-item button 
+    {
+      font-size: 12px;
+    }
+}
